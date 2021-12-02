@@ -13,7 +13,6 @@ def measurement_difference_string(input_data, i):
 # process input data array with depth measurements, return table with measurements and their status
 def process_measurements(input_data):
     array_size = len(input_data)
-    increment_counter = 0
     status_messages = [0] * array_size
     for i in range(array_size):
         new_message = measurement_difference_string(input_data, i)
@@ -21,6 +20,17 @@ def process_measurements(input_data):
     return status_messages
 
 
+# process input data array with depth measurements, return table with measurements and their status
+def count_increments(input_data):
+    array_size = len(input_data)
+    counter = 0
+    for i in range(array_size-1):
+        if input_data[i+1] > input_data[i]:
+            counter += 1
+    return counter
+
+
 # start measurement processing for test data
 test_data = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
 process_measurements(test_data)
+count_increments(test_data)
