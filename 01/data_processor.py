@@ -37,7 +37,6 @@ def int_to_base26(i):
 def get_label_from_int(i):
     label = ''
     base26_number = int_to_base26(i)
-    print(base26_number)
     for i in range(len(base26_number)):
         label += (chr(ord('@')+base26_number[i]))
     return label
@@ -45,10 +44,11 @@ def get_label_from_int(i):
 
 # process input data, into windows with sums
 def get_sum_window_data(input_data, window_size):
-    array_size = len(input_data-window_size+1)
+    array_size = len(input_data)-window_size+1
     window_data = [0]*array_size
     for i in range(array_size):
-        window_data = input_data[i] + input_data[i+1] + input_data[i+2]
+        for j in range(window_size):
+            window_data[i] += input_data[i+j]
     return window_data
 
 
