@@ -12,3 +12,5 @@ def process_input_file(file_name, window_size):
 
 process_input_file("test.txt", 1)
 process_input_file("input.txt", 1)
+process_input_file("test.txt", 3)
+process_input_file("input.txt", 3)
