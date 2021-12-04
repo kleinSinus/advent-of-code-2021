@@ -87,40 +87,50 @@ def compute_unmarked_sum(bingo_board, check_board):
     return unmarked_sum
 
 
+# a run that determines the first board to win
+def game_run(numbers, bingo_boards, check_boards):
+    output_text = ""
+    check = check_boards.copy()
+    running = True
+    numbers_played = 0
+    wins_found = 0
+    winners_found = 0
+    winners = []
+    num_numbers = len(numbers)
+    num_boards = len(bingo_boards)
+    while running and numbers_played < num_numbers:
+        for i in range(num_boards):
+            number = numbers[numbers_played]
+            play_number(number, bingo_boards[i], check[i])
+        numbers_played += 1
+        for i in range(num_boards):
+            if check_for_win(check[i]):
+                winning_number = number
+                wins_found += 1
+                winner = i+1
+                if winner not in winners:
+                    winners_found += 1
+                    if winners_found == 1 or winners_found == num_boards and winner not in winners:
+                        output_text += "After " + str(numbers_played) + " numbers played "
+                        output_text += "board nr. " + str(winner) + " has won the game.\n"
+                        output_text += "Winning number is " + str(winning_number) + " & the board looks as follows\n\n"
+                        output_text += print_board(bingo_boards[i]) + "\n"
+                        output_text += print_board(check[i])
+                        winning_sum = compute_unmarked_sum(bingo_boards[i], check[i])
+                        output_text += "\n\nThe sum of all unmarked numbers is " + str(winning_sum)
+                        output_text += " and therefore the final score is " + str(winning_sum*winning_number) + ".\n\n---\n\n"
+                    winners.append(winner)
+        if winners_found == num_boards:
+            running = False
+    return output_text
+
+
 # generates output text
 def gen_output(input_data):
     output_text = ""
     bingo_numbers = get_bingo_numbers(input_data)
-    num_numbers = len(bingo_numbers)
     bingo_boards = get_bingo_boards(input_data)
     num_boards = len(bingo_boards)
     check_boards = gen_check_boards(num_boards)
-    game_running = True
-    numbers_played = 0
-    winners_found = 0
-    winner = 0
-    winning_number = 999
-    while game_running and numbers_played < num_numbers:
-        for i in range(num_boards):
-            number = bingo_numbers[numbers_played]
-            # print("Playing number " + str(number) + " on board nr. " + str(i))
-            play_number(number, bingo_boards[i], check_boards[i])
-            # print_board(bingo_boards[i])
-            # print_board(check_boards[i])
-        numbers_played += 1
-        for i in range(num_boards):
-            if check_for_win(check_boards[i]):
-                winners_found += 1
-                winner = i
-                winning_number = number
-                output_text += "After " + str(numbers_played) + " numbers played "
-                output_text += "board nr. " + str(i+1) + " has won the game.\n"
-                output_text += "The winning number is " + str(winning_number) + " and the board looks as follows\n\n"
-                output_text += print_board(bingo_boards[i]) + "\n"
-                output_text += print_board(check_boards[i])
-                winning_sum = compute_unmarked_sum(bingo_boards[i], check_boards[i])
-                output_text += "\n\nThe sum of all unmarked numbers is " + str(winning_sum)
-                output_text += " and therefore the final score is " + str(winning_sum*winning_number) + "."
-        if winners_found > 0:
-            game_running = False
+    output_text += game_run(bingo_numbers, bingo_boards, check_boards)
     return output_text
