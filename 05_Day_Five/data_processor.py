@@ -56,7 +56,7 @@ class DDDiagram:
         if self.mat[y][x] == self.max_val:
             self.max_val += 1
         self.mat[y][x] += 1
-        # print("Set point (" + str(x) + ", " + str(y) + ") to " + str(self.mat[y][x]))
+        print("Set point (" + str(x) + ", " + str(y) + ") to " + str(self.mat[y][x]))
 
     def draw_axis_parallel_lines(self, lines):
         for line in lines:
@@ -64,22 +64,38 @@ class DDDiagram:
             if line.start_x == line.end_x or line.start_y == line.end_y:
                 self.draw_line(line)
 
-    def draw_lines(self, lines):
+    def draw_diagonal_lines(self, lines):
         for line in lines:
-            self.draw_line(line)
+            print(line)
+            dx = int(math.fabs(line.end_x-line.start_x))
+            dy = int(math.fabs(line.end_y-line.start_y))
+            if dx == dy:
+                self.draw_line(line)
 
     def draw_line(self, line):
+        if line.start_x > line.end_x:
+            start = (line.end_x, line.end_y)
+            end = (line.start_x, line.start_y)
+        else:
+            start = (line.start_x, line.start_y)
+            end = (line.end_x, line.end_y)
         x_min = min(line.end_x, line.start_x)
         y_min = min(line.end_y, line.start_y)
-        x_range = int(math.fabs(line.end_x-line.start_x))
-        y_range = int(math.fabs(line.end_y-line.start_y))
-        if x_range == 0:
-            for i in range(y_range+1):
+        x_max = max(line.end_x, line.start_x)
+        y_max = max(line.end_y, line.start_y)
+        dx = x_max - x_min
+        dy = y_max - y_min
+        y_dir = end[1]-start[1]
+        if dx == 0:
+            for i in range(dy+1):
                 self.add_point(x_min, y_min+i)
         else:
-            y_step = y_range/x_range
-            for x_step in range(x_range+1):
-                self.add_point(x_min+x_step, int(math.fabs(y_min+x_step*y_step)))
+            if y_dir < 0:
+                y_step = -dy/dx
+            else:
+                y_step = dy/dx
+            for x_step in range(dx+1):
+                self.add_point(start[0]+x_step, start[1]+x_step*int(y_step))
 
     def max_value_count(self):
         count = 0
@@ -157,7 +173,8 @@ def gen_output(input_data):
     output_text = "OUTPUT\n======\n\n"
     diagram = DDDiagram(dim[0], dim[1])
     diagram.draw_axis_parallel_lines(input_lines)
+    diagram.draw_diagonal_lines(input_lines)
     output_text += str(diagram)
     diagram.draw_image()
-    # diagram.show_image()
+    diagram.show_image()
     return output_text
