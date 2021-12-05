@@ -1,4 +1,2 @@
-.idea/
-*/__pycache__/
-*.iml
 out*.txt
+__pycache__/
