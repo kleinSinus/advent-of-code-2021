@@ -3,6 +3,9 @@ Advent of Code 2021
 
 The times in the following table are in the timezone of the challenge. When it's 00:00 in that timezone its 06:00 in mine.
 
+The estimates on the first few days are the timestamps from when the input files were saved on my machine.
+I have to use the estimates since I didn't think of maintaining stats then and didn't track my starting the challenge properly.
+
 
 | Day Nr. | Start Time | First Star | 2nd Star | Time Part 1 | Time Part 2 |
 |---------|------------|------------|----------|-------------|-------------|
