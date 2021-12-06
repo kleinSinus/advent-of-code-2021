@@ -56,7 +56,7 @@ class DDDiagram:
         if self.mat[y][x] == self.max_val:
             self.max_val += 1
         self.mat[y][x] += 1
-        print("Set point (" + str(x) + ", " + str(y) + ") to " + str(self.mat[y][x]))
+        # print("Set point (" + str(x) + ", " + str(y) + ") to " + str(self.mat[y][x]))
 
     def draw_axis_parallel_lines(self, lines):
         for line in lines:
