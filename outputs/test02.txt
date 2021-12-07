@@ -1,0 +1,11 @@
+PART ONE
+========
+
+After following the instructions, you would have a horizontal position of 15
+and a depth of 10 (Multiplying these together produces 150)
+
+PART TWO
+========
+
+After following the better instructions, you would have a horizontal position of 15
+and a depth of 60 (Multiplying these together produces 900)

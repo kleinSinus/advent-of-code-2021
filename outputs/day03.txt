@@ -1,0 +1,13 @@
+PART ONE
+========
+
+Gamma rate: 111100100011 -> 3875
+Epsilon rate: 000011011100 -> 220
+=> Power consumption: 852500
+
+PART TWO
+========
+
+Oxygen rate: 100010111011 -> 2235
+CO2 rate: 000111000011 -> 451
+=> Life Support Rating: 1007985

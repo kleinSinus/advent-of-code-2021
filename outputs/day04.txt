@@ -1,0 +1,40 @@
+After 30 numbers played board nr. 43 has won the game.
+Winning number is 38 & the board looks as follows
+
+[95, 18, 69, 85, 63]
+[16, 78, 97, 10, 41]
+[53, 98, 73, 87, 19]
+[15, 35, 94, 57, 82]
+[48, 40, 14, 3, 38]
+
+[0, 0, 1, 1, 1]
+[1, 0, 1, 0, 0]
+[0, 0, 0, 0, 1]
+[1, 0, 0, 0, 1]
+[1, 1, 1, 1, 1]
+
+
+The sum of all unmarked numbers is 739 and therefore the final score is 28082.
+
+---
+
+After 86 numbers played board nr. 84 has won the game.
+Winning number is 32 & the board looks as follows
+
+[19, 27, 96, 54, 36]
+[33, 32, 65, 11, 26]
+[0, 47, 25, 59, 56]
+[41, 45, 76, 14, 98]
+[52, 22, 31, 66, 38]
+
+[1, 0, 1, 1, 1]
+[1, 1, 1, 1, 1]
+[1, 1, 0, 1, 1]
+[0, 1, 1, 1, 0]
+[1, 1, 1, 0, 1]
+
+
+The sum of all unmarked numbers is 257 and therefore the final score is 8224.
+
+---
+

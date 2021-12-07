@@ -1,0 +1,11 @@
+PART ONE
+========
+
+After following the instructions, you would have a horizontal position of 2063
+and a depth of 1005 (Multiplying these together produces 2073315)
+
+PART TWO
+========
+
+After following the better instructions, you would have a horizontal position of 2063
+and a depth of 892056 (Multiplying these together produces 1840311528)

@@ -1,0 +1,40 @@
+After 12 numbers played board nr. 3 has won the game.
+Winning number is 24 & the board looks as follows
+
+[14, 21, 17, 24, 4]
+[10, 16, 15, 9, 19]
+[18, 8, 23, 26, 20]
+[22, 11, 13, 6, 5]
+[2, 0, 12, 3, 7]
+
+[1, 1, 1, 1, 1]
+[0, 0, 0, 1, 0]
+[0, 0, 1, 0, 0]
+[0, 1, 0, 0, 1]
+[1, 1, 0, 0, 1]
+
+
+The sum of all unmarked numbers is 188 and therefore the final score is 4512.
+
+---
+
+After 15 numbers played board nr. 2 has won the game.
+Winning number is 13 & the board looks as follows
+
+[3, 15, 0, 2, 22]
+[9, 18, 13, 17, 5]
+[19, 8, 7, 25, 23]
+[20, 11, 10, 24, 4]
+[14, 21, 16, 12, 6]
+
+[0, 0, 1, 1, 0]
+[1, 0, 1, 1, 1]
+[0, 0, 1, 0, 1]
+[0, 1, 1, 1, 1]
+[1, 1, 1, 0, 0]
+
+
+The sum of all unmarked numbers is 148 and therefore the final score is 1924.
+
+---
+

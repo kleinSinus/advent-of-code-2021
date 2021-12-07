@@ -1,0 +1,9 @@
+PART ONE
+========
+
+In this example, there are 1228 measurements that are larger than the previous measurement.
+
+PART TWO
+========
+
+In this example, there are 1257 sums that are larger than the previous sum.
