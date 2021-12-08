@@ -45,3 +45,12 @@ def bin2bits(bin):
     for bit in bin:
         bits += str(bit)
     return bits
+
+# takes a string of comma-separated integers,
+# returns a list of integers
+def csv2intlist(csv):
+    temp = csv.split(',')
+    result = [0] * len(temp)
+    for i in range(len(temp)):
+        result[i] = int(temp[i])
+    return result

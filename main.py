@@ -2,7 +2,7 @@ import file_processor
 import data_processor
 
 date = 7
-test_mode = True
+test_mode = False
 valid_date = True
 
 if date < 10:
