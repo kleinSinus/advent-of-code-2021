@@ -1,0 +1,9 @@
+PART ONE
+========
+
+In the example, there are 284 instances of digits that use a unique number of segments.
+
+PART TWO
+========
+
+Adding all of the output values in this example produces 973499.

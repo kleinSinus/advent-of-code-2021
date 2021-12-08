@@ -1,10 +1,11 @@
+import config
 import file_processor
 import data_processor
 
-date = 7
-test_mode = False
-valid_date = True
+date = config.date
+test_mode = config.test_mode
 
+valid_date = True
 if date < 10:
     if test_mode:
         file_name = "test0" + str(date) + ".txt"
