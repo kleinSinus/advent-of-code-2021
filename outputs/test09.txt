@@ -1,0 +1,16 @@
+PART ONE
+========
+
+Low Point found at (1, 0), value = 1. 
+Low Point found at (2, 2), value = 5. 
+Low Point found at (6, 4), value = 5. 
+Low Point found at (9, 0), value = 0. 
+
+Calculated risk is therefore 15. 
+
+PART TWO
+========
+
+There are 4 basins.
+The three largest basins have sizes 14, 9 and 9.
+If you multiply together the sizes of the three largest basins, you get 1134.
