@@ -1,0 +1,1 @@
+There are 3509 paths through the given cave system.

@@ -10,7 +10,7 @@ if date < 10:
     if test_mode:
         file_name = "test0" + str(date) + ".txt"
     else:
-        file_name = "day0" + str(date) + ".txt"
+        file_name = "day0" + str(date) + ".txt" 
 elif date < 26:
     if test_mode:
         file_name = "test" + str(date) + ".txt"
