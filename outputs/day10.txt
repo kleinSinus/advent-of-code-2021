@@ -1,0 +1,11 @@
+PART ONE
+========
+
+
+There are 49 erroneous lines in the current input file.
+The error score for the current file is 339477.
+
+PART TWO
+========
+
+The middle completion score for the remaining 49 lines is 3049320156.

@@ -1,0 +1,21 @@
+PART ONE
+========
+
+[({([[{{-> COMPLETION with }}]])})]: 288957
+({[<{(-> COMPLETION with )}>]}): 5566
+ - Expected ], but found } instead.-> ERROR 1197
+((((<{<{{-> COMPLETION with }}>}>)))): 1480781
+ - Expected ], but found ) instead.-> ERROR 3
+ - Expected ), but found ] instead.-> ERROR 57
+<{[{[{{[[-> COMPLETION with ]]}}]}]}>: 995444
+ - Expected >, but found ) instead.-> ERROR 3
+ - Expected ], but found > instead.-> ERROR 25137
+<{([-> COMPLETION with ])}>: 294
+
+There are 5 erroneous lines in the current input file.
+The error score for the current file is 26397.
+
+PART TWO
+========
+
+The middle completion score for the remaining 5 lines is 288957.
