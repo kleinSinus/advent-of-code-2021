@@ -1,0 +1,9 @@
+PART ONE
+========
+
+After 100 steps, there have been a total of 1656 flashes.
+
+PART TWO
+========
+
+The first time all octopuses flash simultaneously is step 195.
