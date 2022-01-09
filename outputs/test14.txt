@@ -1,0 +1,28 @@
+PART ONE
+========
+
+Template:     NNCB
+After step 1: NCNBCHB
+After step 2: NBCCNBBBCBHCB
+After step 3: NBBBCNCCNBBNBNBBCHBHHBCHB
+After step 4: NBBNBNBBCCNBCNCCNBBNBBNBBBNBBNBBCBHCBHHNHCBBCBHCB
+Result length after step 5: 97
+Result length after step 6: 193
+Result length after step 7: 385
+Result length after step 8: 769
+Result length after step 9: 1537
+Result length after step 10: 3073
+
+After step 10:
+- N occurs 865 times
+- B occurs 1749 times
+- C occurs 298 times
+- H occurs 161 times
+
+Taking the quantity of the most common element (B, 1749)
+and subtracting the quantity of the least common element (H, 161)
+produces 1749 - 161 = 1588.
+
+PART TWO
+========
+

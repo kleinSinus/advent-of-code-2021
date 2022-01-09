@@ -1,0 +1,35 @@
+PART ONE
+========
+
+Template: CKKOHNSBPCPCHVNKHFFK
+Result length after step 1: 39
+Result length after step 2: 77
+Result length after step 3: 153
+Result length after step 4: 305
+Result length after step 5: 609
+Result length after step 6: 1217
+Result length after step 7: 2433
+Result length after step 8: 4865
+Result length after step 9: 9729
+Result length after step 10: 19457
+
+After step 10:
+- C occurs 649 times
+- F occurs 4480 times
+- V occurs 2979 times
+- H occurs 4100 times
+- S occurs 2455 times
+- O occurs 738 times
+- B occurs 1320 times
+- N occurs 1085 times
+- K occurs 784 times
+- P occurs 867 times
+
+Taking the quantity of the most common element (F, 4480)
+and subtracting the quantity of the least common element (C, 649)
+produces 4480 - 649 = 3831.
+
+
+PART TWO
+========
+
