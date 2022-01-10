@@ -6,6 +6,10 @@ After step 1: NCNBCHB
 After step 2: NBCCNBBBCBHCB
 After step 3: NBBBCNCCNBBNBNBBCHBHHBCHB
 After step 4: NBBNBNBBCCNBCNCCNBBNBBNBBBNBBNBBCBHCBHHNHCBBCBHCB
+Result length after step 1: 7
+Result length after step 2: 13
+Result length after step 3: 25
+Result length after step 4: 49
 Result length after step 5: 97
 Result length after step 6: 193
 Result length after step 7: 385
@@ -26,3 +30,10 @@ produces 1749 - 161 = 1588.
 PART TWO
 ========
 
+Max count after step 40: 
+N: 1096047802353
+C: 6597635301
+B: 2192039569602
+H: 3849876073
+
+The subtraction yields 2188189693529
